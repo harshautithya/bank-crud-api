@@ -1,5 +1,41 @@
+# Bank Customer CRUD API
 
-# CURL Requests
+A simple REST API built using Spring Boot to perform CRUD operations on bank customers.
+
+## Features
+
+* Create a customer
+* Get all customers
+* Get customer by ID
+* Update customer details
+* Delete customer
+
+## Tech Stack
+
+* Java
+* Spring Boot
+* Spring Data JPA
+* Hibernate
+* H2 Database
+* Postman
+
+## Running the Application
+
+1. Clone the repository
+2. Run the Spring Boot application
+3. Access the H2 console:
+
+http://localhost:8080/h2-console
+
+Database URL:
+
+jdbc:h2:mem:test
+
+---
+
+# API Requests
+
+## CURL Requests
 
 ### 1. Create a Customer
 
@@ -21,6 +57,7 @@ curl -X POST http://localhost:8080/api/customers \
 ```bash
 curl -X GET http://localhost:8080/api/customers
 ```
+
 ---
 
 ### 3. Get Customer by ID
@@ -51,3 +88,9 @@ curl -X PUT http://localhost:8080/api/customers/1 \
 ```bash
 curl -X DELETE http://localhost:8080/api/customers/1
 ```
+
+---
+
+## API Testing
+
+All APIs were tested using Postman.
